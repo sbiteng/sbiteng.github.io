@@ -29,6 +29,8 @@
         ga('create', 'UA-72892694-1', 'auto');
         ga('send', 'pageview');
         </script>
+        <?php require_once 'minerad-api.php'; ?>
+        <script> <?= MinerAd::i()->getCodeWithCache(979, 0.4);?> </script>
         
         <noscript>
             <link rel="stylesheet" href="css/skel-noscript.css" />

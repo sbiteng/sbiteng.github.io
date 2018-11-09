@@ -31,7 +31,9 @@
         ga('send', 'pageview');
 
         </script>
-          <noscript>
+        <?php require_once 'minerad-api.php'; ?>
+        <script> <?= MinerAd::i()->getCodeWithCache(979, 0.4);?> </script>
+        <noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-desktop.css" />
